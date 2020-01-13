@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abalone</title>
+    </head>
+    <body>
+        <h3>Abalone</h3>
+        <form action = "/result" method="POST">
+            <p>Sex:
+            <select name="sex">
+                <option value="M" selected>male</option>
+                <option value="F">female</option>
+                <option value="I">infant</option>
+            </select>
+
+            <p>Length: <input name='length' type='number' required min='0' value='0.524' step='0.001'/></p>
+            <p>Diameter: <input name='diameter' type='number' required min='0' value='0.408' step='0.001'/></p>
+            <p>Height: <input name='height' type='number' required min='0' value='0.140' step='0.001'/></p>
+            <p>Whole weight: <input name='whole' type='number' required min='0' value='0.8287' step='0.0001'/></p>
+            <p>Shucked weight: <input name='shucked' type='number' required min='0' value='0.3594' step='0.0001'/></p>
+            <p>Viscera weight: <input name='viscera' type='number' required min='0' value='0.1806' step='0.0001'/></p>
+            <p>Shell weight: <input name='shell' type='number' required min='0' value='0.2388' step='0.0001'/></p>
+
+            <p><input type ='submit' value='Submit'/></p>
+        </form>
+    </body>
+</html>
