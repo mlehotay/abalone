@@ -60,4 +60,4 @@ sqrt(mean_squared_error(y_train, model.predict(Z_train))) # RMSE is 2.2
 pipe = make_pipeline(mapper, model)
 pipe.fit(X_train, y_train)
 pipe.score(X_test, y_test)
-pickle.dump(pipe, open('model/pipe.pkl', 'wb'))
+pickle.dump(pipe, open('model/pipe.pkl', 'wb')) # https://mollusc.herokuapp.com/

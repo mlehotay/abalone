@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 import pandas as pd
 import pickle
 
+# App is deployed to heroku: https://mollusc.herokuapp.com/
+
 app = Flask(__name__, template_folder='templates')
 pipe = pickle.load(open('model/pipe.pkl', 'rb'))
 
