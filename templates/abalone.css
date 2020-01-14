@@ -1,0 +1,19 @@
+body {
+    /* colors: https://encycolorpedia.com/dbc7bd */
+    background-color: #dbc7bd;
+    color: #243842;
+}
+
+div.leftside {
+    float: left;
+    width: 50%;
+}
+
+div.rightside {
+    float: right;
+    width: 50%;
+}
+
+div.predictions {
+    display: none;
+}
