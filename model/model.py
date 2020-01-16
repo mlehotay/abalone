@@ -13,7 +13,12 @@ import pickle
 
 # Read abalone dataset
 df = pd.read_csv('data/abalone.csv')
+
+# undo scaling described in https://archive.ics.uci.edu/ml/datasets/abalone
+df[df.select_dtypes(include=['float64']).columns] *= 200
+
 df.describe() # use the mean values as defaults in index.html
+df['Sex'].value_counts()
 
 target = 'Rings'
 y = df[target]

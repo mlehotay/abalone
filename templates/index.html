@@ -50,7 +50,6 @@
 
         <div class="rightside">
             <form action = "/result" method="POST">
-
             <div class="twosides">
             <div class="leftside">
 
@@ -61,40 +60,31 @@
                 <option value="I">infant</option>
             </select>
 
-            <p>Length:
-            <input name='length' type='number' required min='0'
-            value='0.524' step='0.001'/></p>
+            <p>Length (mm)
+            <input name='length' type='number' required min='0' value='105'/></p>
 
-            <p>Height:
-            <input name='height' type='number' required min='0'
-            value='0.140' step='0.001'/></p>
+            <p>Height (mm)
+            <input name='height' type='number' required min='0' value='28'/></p>
 
-            <p>Diameter:
-            <input name='diameter' type='number' required min='0'
-            value='0.408' step='0.001'/></p>
+            <p>Diameter (mm)
+            <input name='diameter' type='number' required min='0' value='82'/></p>
 
-            <div class='predictions'>
-            <p>Rings: <input name='rings' type='number'></p>
-
-            <p>Age: <input name='age' type='number'></p>
-            </div>
             </div>
 
             <div class="rightside">
-            <p>Whole weight: <input name='whole' type='number'
-                required min='0' value='0.8287' step='0.0001'/></p>
+            <p>Whole weight (g) <input name='whole' type='number'
+                required min='0' value='166'/></p>
 
-            <p>Shucked weight: <input name='shucked' type='number'
-                required min='0' value='0.3594' step='0.0001'/></p>
+            <p>Shucked weight (g) <input name='shucked' type='number'
+                required min='0' value='72'/></p>
 
-            <p>Viscera weight: <input name='viscera' type='number'
-                required min='0' value='0.1806' step='0.0001'/></p>
+            <p>Viscera weight (g) <input name='viscera' type='number'
+                required min='0' value='36'/></p>
 
-            <p>Shell weight: <input name='shell' type='number'
-                required min='0' value='0.2388' step='0.0001'/></p>
+            <p>Shell weight (g) <input name='shell' type='number'
+                required min='0' value='48'/></p>
 
             <p><input type ='reset' value='Reset'/>
-
             <input type ='submit' value='Submit'/></p>
 
             </div>
